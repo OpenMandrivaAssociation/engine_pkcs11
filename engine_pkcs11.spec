@@ -1,7 +1,7 @@
 Summary: PKCS#11 engine for OpenSSL
 Name: engine_pkcs11
-Version: 0.1.4
-Release: %mkrel 3
+Version: 0.1.5
+Release: %mkrel 1
 License: BSD
 Group: System/Libraries
 Source0: http://www.opensc.org/files/%{name}-%{version}.tar.gz
@@ -48,12 +48,12 @@ EOF
 chmod 0644 README.mandriva
 
 %build
-%configure
-%make enginedir=%{_libdir}/openssl/engines
+%configure2_5x --with-enginesdir=%{_libdir}/openssl/engines
+%make
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%makeinstall_std enginedir=%{_libdir}/openssl/engines
+%makeinstall_std
 
 # remove unnecessary files
 rm -f %{buildroot}%{_libdir}/openssl/engines/*.a
@@ -63,7 +63,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(-,root,root)
-%doc doc/README doc/*.html doc/*.css README.mandriva
+%doc doc/README doc/nonpersistent/wiki.out/* README.mandriva
 %{_libdir}/openssl/engines/*
-
-
