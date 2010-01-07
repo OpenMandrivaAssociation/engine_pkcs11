@@ -1,6 +1,6 @@
 Summary: PKCS#11 engine for OpenSSL
 Name: engine_pkcs11
-Version: 0.1.7
+Version: 0.1.8
 Release: %mkrel 1
 License: BSD
 Group: System/Libraries
