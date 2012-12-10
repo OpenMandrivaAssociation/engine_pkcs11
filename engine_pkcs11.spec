@@ -65,3 +65,56 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %doc doc/README doc/nonpersistent/wiki.out/* README.mandriva
 %{_libdir}/openssl/engines/*
+
+
+%changelog
+* Sun Dec 05 2010 Oden Eriksson <oeriksson@mandriva.com> 0.1.8-3mdv2011.0
++ Revision: 610376
+- rebuild
+
+* Wed Apr 21 2010 Funda Wang <fwang@mandriva.org> 0.1.8-2mdv2010.1
++ Revision: 537454
+- rebuild
+
+* Thu Jan 07 2010 Frederik Himpe <fhimpe@mandriva.org> 0.1.8-1mdv2010.1
++ Revision: 487337
+- update to new version 0.1.8
+
+* Sun Dec 27 2009 Frederik Himpe <fhimpe@mandriva.org> 0.1.7-1mdv2010.1
++ Revision: 482764
+- Update to new version 0.7.1
+- a few cosmetic clean-ups in SPEC file
+
+* Thu Sep 10 2009 Thierry Vignaud <tv@mandriva.org> 0.1.5-2mdv2010.0
++ Revision: 437462
+- rebuild
+
+* Tue Oct 14 2008 Funda Wang <fwang@mandriva.org> 0.1.5-1mdv2009.1
++ Revision: 293500
+- new version 0.1.5
+
+* Thu Jul 24 2008 Thierry Vignaud <tv@mandriva.org> 0.1.4-3mdv2009.0
++ Revision: 244904
+- rebuild
+- kill re-definition of %%buildroot on Pixel's request
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Mon Nov 05 2007 Andreas Hasenack <andreas@mandriva.com> 0.1.4-1mdv2008.1
++ Revision: 106185
+- updated to version 0.1.4
+
+
+* Fri Jan 12 2007 Andreas Hasenack <andreas@mandriva.com> 0.1.3-3mdv2007.0
++ Revision: 107938
+- rebuilt
+- Import engine_pkcs11
+
+* Mon Dec 05 2005 Andreas Hasenack <andreas@mandriva.com> 0.1.3-2mdk
+- fix engine path to match openssl's
+- added a README.mandriva file to explain this change
+
+* Sat Dec 03 2005 Andreas Hasenack <andreas@mandriva.com> 0.1.3-1mdk
+- packaged for Mandriva
+
