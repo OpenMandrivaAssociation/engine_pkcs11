@@ -1,14 +1,13 @@
 Summary: PKCS#11 engine for OpenSSL
 Name: engine_pkcs11
 Version: 0.1.8
-Release: %mkrel 3
+Release: 4
 License: BSD
 Group: System/Libraries
 Source0: http://www.opensc-project.org/files/%{name}/%{name}-%{version}.tar.gz
 Buildrequires: libp11-devel >= 0.2.1
 Buildrequires: pkgconfig(openssl)
 URL: http://www.opensc.org/engine_pkcs11
-BuildRoot: %{_tmppath}/%{name}-%{version}-root
 
 %description
 Engine_pkcs11 is an implementation of an engine for OpenSSL. It can be loaded
