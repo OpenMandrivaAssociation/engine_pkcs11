@@ -7,7 +7,7 @@ Group: System/Libraries
 Source0: http://www.opensc-project.org/files/%{name}/%{name}-%{version}.tar.gz
 Buildrequires: libp11-devel >= 0.2.1
 Buildrequires: pkgconfig(openssl)
-URL: http://www.opensc.org/engine_pkcs11
+URL: https://www.opensc.org/engine_pkcs11
 
 %description
 Engine_pkcs11 is an implementation of an engine for OpenSSL. It can be loaded
