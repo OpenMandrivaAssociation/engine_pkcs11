@@ -5,6 +5,11 @@ Release: 5
 License: BSD
 Group: System/Libraries
 Source0: http://www.opensc-project.org/files/%{name}/%{name}-%{version}.tar.gz
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 Buildrequires: libp11-devel >= 0.2.1
 Buildrequires: pkgconfig(openssl)
 URL: https://www.opensc.org/engine_pkcs11
